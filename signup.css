@@ -5,13 +5,12 @@
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
-.nav {
+.nav
+{
     background-color: rgba(17, 119, 214, 0.979);
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-.nav a {
+    overflow: auto;
+}
+.nav a{
     float: left;
     color: white;
     text-align: center;
@@ -19,12 +18,11 @@
     text-decoration: none;
     font-size: 17px;
 }
-  
-
-.nav a:hover {
+.nav a:hover{
     background-color: rgb(11, 81, 212);
 }
-  
+
+ 
 
 body{
     background: #ffffff;
@@ -34,6 +32,7 @@ body{
     max-width: 440px;
     padding: 0 20px;
     margin: 170px auto;
+    
 }
 .wrapper{
     width: 100%;
@@ -48,7 +47,7 @@ body{
     color: #fff;
     font-size: 30px;
     font-weight: 600;
-    display: flex;
+    display: flex; 
     align-items: center;
     justify-content: center;
 }
@@ -104,12 +103,4 @@ form .row input::placeholder{
 form .button input:hover{
     background: rgba(7, 88, 163, 0.979);
 }
-.wrapper form .signup-link{
-    text-align: center;
-    margin-top: 20px;
-    font-size: 17px;
-}
-.wrapper form .signup-link a{
-    color: rgba(17, 119, 214, 0.979);
-    text-decoration: underline;
-}
+
