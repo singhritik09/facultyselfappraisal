@@ -20,14 +20,14 @@
     <div class="container">
       <div class="wrapper">
         <div class="title"><span>Login</span></div>
-        <form action="">
+        <form method="post" action="login_verify.php">
           <div class="row">
             <i class="fas fa-user"></i>
-            <input type="text" placeholder="Email or Phone" required>
+            <input type="text" placeholder="Email or Phone"name="email" required>
           </div>
           <div class="row">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Password" name="pass" required>
           </div>
           <div class="pass"><a href="#">Forgot password?</a></div>
           <div class="row button">
@@ -35,9 +35,23 @@
             <a href="form.html"><input type="submit" value="Login"></a>
             
           </div>
-          <div class="signup-link">Not a member? <a href="signup.html">Signup now</a></div>
+          <div class="signup-link">Not a member? <a href="signup.php">Signup now</a></div>
         </form>
       </div>
+    </div>
+
+    <div>
+    <?php
+
+    if(isset($_GET['reg']))
+    {
+      if($_GET['reg']==1){
+        echo "<script>alert('Registration Successful! Please Login:');</script>";
+      }
+  }
+
+    ?>
+
     </div>
 
   </body>

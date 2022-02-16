@@ -16,29 +16,30 @@
     <div class="container">
     <div class="wrapper">
         <div class="title"><span>SIGNUP HERE</span></div>
-        <form action="#">
+        <form action="submit.php" method="post">
+          <div class="row">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Name" name="name"required>
+          </div>
             <div class="row">
                 <i class="fas fa-user"></i>
-                <input type="text" placeholder="Email" required>
+                <input type="text" placeholder="Email" name="email"required>
               </div>
-              <div class="row">
-                <i class="fas fa-user"></i>
-                <input type="text" placeholder="Name" required>
-              </div>
-              <div class="row">
+              
+              <!-- <div class="row">
                 <i class="fas fa-user"></i>
                 <input type="tel" placeholder="Phone Number" required>
-              </div>
+              </div> -->
               <div class="row">
                 <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Enter password" required>
+                <input type="password" placeholder="Enter password"name="pass" required>
               </div>
               <div class="row">
                 <i class="fas fa-lock"></i>
                 <input type="password" placeholder="Re enter password" required>
               </div>
               <div class="row button">
-                <input type="submit" value="Signup">
+                <input type="submit" value="signup">
               </div>
         </form>
 

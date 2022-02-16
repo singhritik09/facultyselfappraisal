@@ -1,3 +1,11 @@
+<?php
+
+session_start();
+
+if(isset($_SESSION['userId'])){
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +23,7 @@
         <a href="#contact">Contact</a>
         <a href="signup.html">Signup</a>
         <a href="index.html">Login</a>
+        <a href="logout.php">Logout</a>
     </div>
     <div style="background-image: url('background1.jpg');">
         
@@ -46,3 +55,13 @@
   </html> 
 </body>
 </html>
+
+<?php
+}
+else{
+    echo "<script>You need to login first/script>";
+    header("location:login.php");
+}
+
+
+?>
