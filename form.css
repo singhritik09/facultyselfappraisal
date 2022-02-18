@@ -9,6 +9,7 @@
     background-color: rgba(17, 119, 214, 0.979);
     overflow: hidden;
   }
+  
 .nav a {
     float: left;
     color: white;
@@ -17,68 +18,88 @@
     text-decoration: none;
     font-size: 17px;
 }
-  
 
 .nav a:hover {
     background-color: rgb(11, 81, 212);
 }
-body {
-    background:url("bmsce1.jpg");
-    font-family: Verdana;
+body{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    box-shadow: none;
+    background-image:url("form_background.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.container{
+    width: 400px;
+    height:420px;
+    margin:8% auto;
+    background-color: black;
+    border-radius: 1em;
+    position: relative;
+    overflow: hidden;
+    box-shadow: -3px -3px 5px rgba(20, 17, 17, 0.842),
+    3px 3px 5px black;
+}
+h2{
+    text-align: center;
+    color:rgba(17, 119, 214, 0.979);
+    margin-bottom: 1.5em;
+}
+
+.container form{
+    width:15em;
+    position: absolute;
+    align-items: center;
+    top:60px;
+    left:80px;
+    transition: -5s all ease;
+}
+
+form input{
+    width:100%;
+    padding: 10px 5px;
+    border:0;
+    color:aliceblue;
+    border-bottom: 0.1em solid gray;
+    background: transparent;
+    outline: none;
+    font-weight: 500;
+
+}
+::placeholder{
+    color:rgba(240, 170, 20, 0.938);
+}
+
+.btn{
+    width:100%;
+    margin: 1.5em auto;
     text-align: center;
 }
+form button{
+    width:40%;
+    border-radius: 4em solid;
+    align-items: center;
+    background-color:orange;
+    padding: 5px 5px;
+    font-style: bold;
+    font-size: 1em;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    margin: 0 5px;
 
+}
 
-form {
-    background-color: rgba(0, 0, 0, 0.5);
-    max-width: 500px;
-    margin: 50px auto;
-    padding: 30px 20px;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+#form2{
+    left: 450px;
 }
 
 
-.form-control {
-    text-align: left;
-    margin-bottom: 25px;
-}
-
-
-.form-control label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-
-.form-control input,
-.form-control select,
-.form-control textarea {
-    border: 1px solid #777;
-    border-radius: 2px;
-    font-family: inherit;
-    padding: 10px;
-    display: block;
-    width: 95%;
-}
-
-
-.form-control input[type="radio"],
-.form-control input[type="checkbox"] {
-    display: inline-block;
-    width: auto;
-}
-
-
-button {
-    background-color: rgba(17, 119, 214, 0.979);
-    border: 1px solid #777;
-    border-radius: 4px;
-    font-family: inherit;
-    font-size: 21px;
-    display: block;
-    width: 20%;
-    align-self: center;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
+#form3{
+    left:-450px;
 }

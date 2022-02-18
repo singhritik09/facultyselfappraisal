@@ -15,139 +15,101 @@
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
     </div>
-    <h1>Appraisal Form</h1>
-    <form id="form">
+    <div class="container">
         
-        <div class="form-control">
-            <label for="role" id="label-role">
-                SUBJECT YOU TEACH
-            </label>
+        <form action="" id="form1">
+            <h2>Fill Details</h2>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Department" required>
+            <input type="text" placeholder="Designation" required>
+            <input type="text" name="" placeholder="Employee ID" required>
             
-            
-            <select name="role" id="role">
-                <option value="Dld">dld</option>
-                <option value="Coa">coa</option>
-                <option value="Dsc">dsc</option>
-                <option value="wad">Wad</option>
-                <option value="maths">maths</option>
-                <option value="oops">oops</option>
-                <option value="ops">ops</option>
-            </select>
+            <div class="btn">
+            <button type="button" id="next">
+                Next
+            </button>
         </div>
+        </form>
 
+
+        <form action="" id="form2">
+            <h2>Fill Details</h2>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Department" required>
+            <input type="text" placeholder="Designation" required>
+            <input type="text" name="" placeholder="Employee ID" required>
+            
+           
+            <div class="btn">
+                <button type="button" id="back1">
+                    Back
+                </button>
+                <button type="button" id="next2">
+                Next
+                </button>
+            </div>
+        </form>
+
+
+
+        <form action="" id="form3">
+            <h2>Fill Details</h2>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Department" required>
+            <input type="text" placeholder="Designation" required>
+            <input type="text" name="" placeholder="Employee ID" required>
+            
+            <div class="btn">
+                <button type="button" id="back2">
+                    Back
+                </button>
+            <button type="button" id="submit">
+                Submit
+            </button>
+            </div>
+        </form>
+
+
+    </div>
+
+    <script>
+
+        var form1=document.getElementById("form1")
+        var form2=document.getElementById("form2")
+        var form3=document.getElementById("form3")
+
+        var next2=document.getElementById("next2")
+        var back1=document.getElementById("back1")
+        var back2=document.getElementById("back2")
         
-
-        <div class="form-control">
-            <label>SECTION YOU TEACH
-                <small>(Check all that apply)</small>
-            </label>
+        next.onclick=function()
+        {
+            form1.style.left="-450px";
+            form2.style.left="40px";
+        }
+        back1.onclick=function()
+        {
+            form1.style.left="40px";
+            form2.style.left="450px";
+        }
+        next2.onclick=function()
+        {
+            form2.style.left="-450px";
+            form3.style.left="40px";
+        }
+        back2.onclick=function()
+        {
+            form2.style.left="40px";
+            form3.style.left="450px";
             
-            <label for="inp-1">
-                <input type="checkbox"
-                    name="inp">3 A</input></label>
-            <label for="inp-2">
-                <input type="checkbox"
-                    name="inp">3 B</B></input></label>
-            <label for="inp-3">
-                <input type="checkbox"
-                    name="inp">3 C</input></label>
-            <label for="inp-4">
-                <input type="checkbox"
-                    name="inp">3 D</input></label>
-            <label for="inp-5">
-                <input type="checkbox"
-                    name="inp">5 A</input></label>
-            <label for="inp-6">
-                <input type="checkbox"
-                    name="inp">5 B</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                    name="inp">5 C</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                    name="inp">5 D</input></label>
-                
-        </div>
-        <div class="form-control">
-            <label>
-                ARE YOU STATISFIED WITH YOUR TEACHING
-            </label>
+        }
 
-            
-            <label for="recommed-1">
-                <input type="radio"
-                    id="recommed-1"
-                    name="recommed">Yes</input>
-            </label>
-            <label for="recommed-2">
-                <input type="radio"
-                    id="recommed-2"
-                    name="recommed">No</input>
-            </label>
-        </div>
-        <div class="form-control">
-            <label>
-                ARE YOU ABLE TO COMPLETE THE  COURSE ON TIME
-            </label>
-
-            
-            <label for="recommed-1">
-                <input type="radio"
-                    id="recommed-1"
-                    name="recommed">Yes</input>
-            </label>
-            <label for="recommed-2">
-                <input type="radio"
-                    id="recommed-2"
-                    name="recommed">No</input>
-            </label>
-        </div>
-        <div class="form-control">
-            <label>
-                ARE YOU MOTIVATING STUDENTS
-            </label>
-
-        
-            <label for="recommed-1">
-                <input type="radio"
-                    id="recommed-1"
-                    name="recommed">Yes</input>
-            </label>
-            <label for="recommed-2">
-                <input type="radio"
-                    id="recommed-2"
-                    name="recommed">No</input>
-            </label>
-        </div>
-        
-        <div class="form-control">
-            <label for="marks" id="label-marks">
-                marks
-            </label>
-
-            
-            <input type="text"
-                id="marks"
-                placeholder="Enter the average marks" />
-        </div>
+    </script>
 
 
-        <div class="form-control">
-            <label for="comment">
-                Any comments or suggestions
-            </label>
-
-            
-            <textarea name="comment" id="comment"
-                placeholder="Enter your comment here">
-            </textarea>
-        </div>
-
-        
-        <button type="submit" value="submit">
-            Submit
-        </button>
-    </form>
 </body>
 </html>
 
