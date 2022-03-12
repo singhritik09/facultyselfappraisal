@@ -18,11 +18,10 @@ if(isset($_SESSION['userId'])){
 </head>
 <body>
     <div class="nav">
-        <a href="https://www.bmsce.ac.in/">BMS</a>
+        <a href="https://www.bmsce.ac.in/">BMSCE Official</a>
         <a href="form.html">Appraisal Form</a>
-        <a href="contact.php">Contact</a>
+        <a href="contact.php">News</a>
         <a href="logout.php">Logout</a>
-        <a href="login.php">LOGIN</a>
     </div>
     <div style="background-image: url('background1.jpg');">
         
