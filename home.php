@@ -20,10 +20,9 @@ if(isset($_SESSION['userId'])){
     <div class="nav">
         <a href="https://www.bmsce.ac.in/">BMS</a>
         <a href="form.html">Appraisal Form</a>
-        <a href="#contact">Contact</a>
-        <a href="signup.html">Signup</a>
-        <a href="index.html">Login</a>
+        <a href="contact.php">Contact</a>
         <a href="logout.php">Logout</a>
+        <a href="login.php">LOGIN</a>
     </div>
     <div style="background-image: url('background1.jpg');">
         
@@ -38,16 +37,13 @@ if(isset($_SESSION['userId'])){
         <h2>B.M.S College of Engineering</h2>
         <div class="row">
            <div class="column">
-           <a href=""><img src="" alt=""></a>
-           <a href="">CAMPUS</a>
+           <img src="imag1.jpeg" width ="100%">
            </div>
            <div class="column">
-              <a href=""><img src="" alt=""></a>
-              <a href="">Library</a>
+              <img src="imag2.jpeg" width ="100%">
            </div>
            <div class="column">
-              <a href=""><img src="" alt=""></a>
-              <a href="">Innovative Labs</a>
+           <img src="imag3.jpeg" width ="100%">
            </div>
         </div>
      </div>

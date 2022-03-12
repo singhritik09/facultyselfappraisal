@@ -24,7 +24,18 @@
 }
 
 
+.column{
+   float:left;
+   width:33.33%;
+   padding:5px;
 
+}
+
+.row::after{
+   content: "";
+   display: table;
+   clear:both;
+}
 
 .main-box{
     width: 100%;
@@ -61,7 +72,7 @@
     background: rgba(17, 119, 214, 0.979);
  }
  
- .container{
+ /* .container{
     width: 80%;
     margin: auto;
     margin-bottom: 30px;
@@ -112,4 +123,4 @@
  .container .column:hover a:last-child{
     height: 100%;
     top: 0;
- } 
+ }  */

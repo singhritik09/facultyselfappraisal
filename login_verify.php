@@ -21,11 +21,10 @@ if($query){
 
     }
     else{
-        echo "User Not Found!! Register First";
+        echo "Invalid username or Passsword";
     }
 
 
 }
-
 
 ?>

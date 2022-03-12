@@ -5,6 +5,17 @@
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
+body{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    box-shadow: none;
+    background-image:url("form_background.jpg");
+    background-position: center;
+    background-attachment: absolute;
+    background-size: cover;
+
+}
 .nav {
     background-color: rgba(17, 119, 214, 0.979);
     overflow: hidden;
@@ -22,17 +33,7 @@
 .nav a:hover {
     background-color: rgb(11, 81, 212);
 }
-body{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-    box-shadow: none;
-    background-image:url("form_background.jpg");
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
 
-}
 
 .container{
     width: 400px;
@@ -52,7 +53,7 @@ h2{
 }
 
 .container form{
-    width:15em;
+    width:17em;
     position: absolute;
     align-items: center;
     top:60px;
@@ -102,4 +103,7 @@ form button{
 
 #form3{
     left:-450px;
+}
+#form4{
+    left:900px;
 }
