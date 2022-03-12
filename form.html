@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <title>
@@ -17,11 +16,11 @@
     </div>
     <div class="container">
         
-        <form action="" id="form1">
+        <form action="form_verify.php" id="form1">
             <h2>Fill Details</h2>
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-            <input type="text" placeholder="Department" required>
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="dept" placeholder="Department" required>
             <input type="text" placeholder="Designation" required>
             <input type="text" name="" placeholder="Employee ID" required>
             
@@ -33,13 +32,14 @@
         </form>
 
 
-        <form action="" id="form2">
+        <form action="form_verify.php" id="form2">
             <h2>Fill Details</h2>
             <input type="text" name="sections" id="" placeholder="Sections You teach" required>
             <input type="text" name="" id="" placeholder="Subjects" required>
-            <input type="text" name="" id="" placeholder="Number of: Classes/Tutorials conducted" required>
-            <input type="number" placeholder="Evaluate Your teaching(Out of 10)" required >
-            <input type="number" placeholder="Innovative Methodologies:"required>
+            <input type="number" name="eval" placeholder="Evaluate Your teaching(Out of 10)" required >
+            <input type="text" name="classes" id="" placeholder="Number of: Classes/Tutorials conducted" required>
+            
+            <input type="number" name="innov" placeholder="Innovative Methodologies:"required>
 
 
             
@@ -54,10 +54,10 @@
             </div>
         </form>
 
-        <form action="" id="form3">
+        <form action="form_verify.php" id="form3">
             <h2>Describe </h2>
-            <input type="text" placeholder="Research Project:" required>
-            <input type="text" placeholder="Industrial Training/Online courses" required>
+            <input type="text" name="research" placeholder="Research Project:" required>
+            <input type="text" name="train" placeholder="Industrial Training/Online courses" required>
             <input type="text" placeholder="Student Centric Activity" required>
             <input type="text" placeholder="Professional Development Activities " required>
             
@@ -71,19 +71,19 @@
             </div>
         </form>
 
-        <form action="" id="form4">
+        <form action="form_verify.php" id="form4">
             <h2>Rate(MAX 10)</h2>
-            <input type="number" placeholder="Teaching" required>
+            <input type="number" name="teaching" placeholder="Teaching" required>
             <input type="email" placeholder="Industrial Training" required>
             <input type="text" placeholder="Research Guidance" required>
-            <input type="text" placeholder="Collaborative Projects" required>
+            <input type="text" name="projects" placeholder="Collaborative Projects" required>
             <input type="text" name="" placeholder="Professional Development" required>
             
             <div class="btn">
                 <button type="button" id="back3">
                     Back
                 </button>
-            <button type="button" id="submit">
+            <button type="submit" id="submit">
                 Submit
             </button>
             </div>
