@@ -10,9 +10,10 @@ body{
     margin:0;
     box-sizing: border-box;
     box-shadow: none;
-    background-image:url("form_background.jpg");
+    background-image:url("frm.gif");
     background-position: center;
-    background-attachment: absolute;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 
 }
@@ -37,7 +38,7 @@ body{
 
 .container{
     width: 400px;
-    height:420px;
+    height:520px;
     margin:8% auto;
     background-color: black;
     border-radius: 1em;

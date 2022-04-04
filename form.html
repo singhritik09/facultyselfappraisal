@@ -6,6 +6,7 @@
         Appraisal Form
     </title>
     <link rel="stylesheet" href="form.css">  
+    
 </head>
 
 <body>
@@ -16,13 +17,14 @@
     </div>
     <div class="container">
         
-        <form action="form_verify.php" id="form1">
+        <form  id="form1">
             <h2>Fill Details</h2>
             <input type="text" name="name" placeholder="Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="text" name="dept" placeholder="Department" required>
+            <input type="number" name="cn" id="" placeholder="Contact Number">
+            <input type="text" placeholder="Industrial Training" required>
+            <input type="num" name="ex" id="" placeholder="Total Experience">
             <input type="text" placeholder="Designation" required>
-            <input type="text" name="" placeholder="Employee ID" required>
+            
             
             <div class="btn">
             <button type="button" id="next">
@@ -32,11 +34,10 @@
         </form>
 
 
-        <form action="form_verify.php" id="form2">
+        <form id="form2">
             <h2>Fill Details</h2>
             <input type="text" name="sections" id="" placeholder="Sections You teach" required>
             <input type="text" name="" id="" placeholder="Subjects" required>
-            <input type="number" name="eval" placeholder="Evaluate Your teaching(Out of 10)" required >
             <input type="text" name="classes" id="" placeholder="Number of: Classes/Tutorials conducted" required>
             
             <input type="number" name="innov" placeholder="Innovative Methodologies:"required>
@@ -54,13 +55,13 @@
             </div>
         </form>
 
-        <form action="form_verify.php" id="form3">
+        <form id="form3">
             <h2>Describe </h2>
             <input type="text" name="research" placeholder="Research Project:" required>
             <input type="text" name="train" placeholder="Industrial Training/Online courses" required>
             <input type="text" placeholder="Student Centric Activity" required>
             <input type="text" placeholder="Professional Development Activities " required>
-            
+            <input type="text" name="projects" placeholder="Collaborative Projects" required>
             <div class="btn">
                 <button type="button" id="back2">
                     Back
@@ -71,76 +72,44 @@
             </div>
         </form>
 
-        <form action="form_verify.php" id="form4">
+        <form method="POST" name="google-sheet" id="form4">
             <h2>Rate(MAX 10)</h2>
-            <input type="number" name="teaching" placeholder="Teaching" required>
-            <input type="email" placeholder="Industrial Training" required>
-            <input type="text" placeholder="Research Guidance" required>
-            <input type="text" name="projects" placeholder="Collaborative Projects" required>
-            <input type="text" name="" placeholder="Professional Development" required>
+            <input type="text" name="Name" placeholder="Name" required>
+            <input type="email" name="Email" id="email" placeholder="Email" required>
+            <input type="text" name="Department" placeholder="Department" required>
+            <input type="text" name="Id" placeholder="Employee ID" required>
+            <input type="number" name="Evaluate" id="eval" placeholder="Evaluate Yourself(Max 10)">
+
+            <input type="number" name="Teaching" placeholder="Teaching(Max 10)" required>
+            
             
             <div class="btn">
                 <button type="button" id="back3">
                     Back
                 </button>
-            <button type="submit" id="submit">
-                Submit
-            </button>
+                
+                <!-- <input type="submit"  value="Submit" name="submit" > -->
+                
+                <button  type="submit" id="submit">
+                    Submit
+                </button>
             </div>
+                
+                
         </form>
 
-
     </div>
-
-    <script>
-
-        var form1=document.getElementById("form1");
-        var form2=document.getElementById("form2");
-        var form3=document.getElementById("form3");
-        var form4=document.getElementById("form4");
-
-        var next=document.getElementById("next");
-        var next2=document.getElementById("next2");
-        var next3=document.getElementById("next3");
-
-        var back1=document.getElementById("back1");
-        var back2=document.getElementById("back2");
-        var back3=document.getElementById("back3");
-        
-        next.onclick=function()
-        {
-            form1.style.left="-450px";
-            form2.style.left="45px";
-        }
-        back1.onclick=function()
-        {
-            form1.style.left="40px";
-            form2.style.left="450px";
-        }
-        next2.onclick=function()
-        {
-            form2.style.left="-450px";
-            form3.style.left="40px";
-        }
-        next3.onclick=function()
-        {
-            form3.style.left="-450px";
-            form4.style.left="40px";
-        }
-        back2.onclick=function()
-        {
-            form2.style.left="40px";
-            form3.style.left="450px";
-            
-        }
-        back3.onclick=function()
-        {
-            form3.style.left="40px";
-            form4.style.left="450px";
-        }
-
-    </script>
-
-
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwUo7P_UIY_UjnkDvwzYlHhmAsR3nw99AvzhiLw_t7XoVOse1fUp55U6zImImLdCpd5/exec'
+    const form = document.forms['google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thank You! Your Response has been recorded.."))
+        .catch(error => alert('Error! Try filling the Form again'))
+    })
+  </script>
+  <script type="text/javascript" src="form.js"></script>
 </body>
 </html>

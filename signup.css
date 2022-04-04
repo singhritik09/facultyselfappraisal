@@ -27,18 +27,26 @@
 body{
     background: #ffffff;
     overflow: hidden;
+    background-image: url('6M8G.gif');
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-size: cover;
+    background-attachment: absolute;
+    background-position: center;
+     
 }
 .container{
     max-width: 440px;
-    padding: 0 20px;
-    margin: 170px auto;
-    
+    padding:  10px;
+    margin: 50px auto;
 }
 .wrapper{
     width: 100%;
     background: #fff;
+    /* opacity: 0.9; */
     border-radius: 5px;
     box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+    
 }
 .wrapper .title{
     height: 90px;

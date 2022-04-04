@@ -28,11 +28,18 @@
 body{
     background: #ffffff;
     overflow: hidden;
+    background-image: url('lin.gif');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: absolute;
+    z-index: -1;
+    background-position: center;
+    
 }
 .container{
     max-width: 440px;
     padding: 0 20px;
-    margin: 170px auto;
+    margin: 50px auto;
 }
 .wrapper{
     width: 100%;
